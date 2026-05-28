@@ -40,10 +40,7 @@ function handleClick(event) {
             }
 
             // Adds leading zero if value is less than 10
-            currentTime.innerText =
-                `${hours < 10 ? `0${hours}` : hours}:` +
-                `${minutes < 10 ? `0${minutes}` : minutes}:` +
-                `${seconds < 10 ? `0${seconds}` : seconds}`;
+            currentTime.innerText = `${hours < 10 ? `0${hours}` : hours}:` +`${minutes < 10 ? `0${minutes}` : minutes}:` +`${seconds < 10 ? `0${seconds}` : seconds}`;
 
         }, 100); // Runs every 100ms
 
