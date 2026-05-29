@@ -65,8 +65,8 @@ function handleClick(event) {
         minutes = 0;
         hours = 0;
         // Reset displayed time
-
-        currentTime.innerText = '00:00:00';
+       currentTime.innerText = `${hours < 10 ? `0${hours}` : hours}:` +`${minutes < 10 ? `0${minutes}` : minutes}:` 
+           +`${seconds < 10 ? `0${seconds}` : seconds}`;
     }
 }
 
